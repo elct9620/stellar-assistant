@@ -16,18 +16,15 @@ gem 'rake'
 
 group :development, :test do
   gem 'dotenv'
-end
+  gem 'rubocop'
 
-group :cli, :development do
-  gem 'hanami-reloader'
-end
-
-group :cli, :development, :test do
   gem 'hanami-rspec'
 end
 
 group :development do
   gem 'guard-puma', '~> 0.8'
+
+  gem 'hanami-reloader'
 end
 
 group :test do
