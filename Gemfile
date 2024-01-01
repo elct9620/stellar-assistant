@@ -6,6 +6,7 @@ ruby file: '.ruby-version'
 
 gem 'hanami', '~> 2.0'
 gem 'hanami-controller', '~> 2.0'
+gem 'hanami-lambda', github: 'elct9620/hanami-lambda', branch: 'main'
 gem 'hanami-router', '~> 2.0'
 gem 'hanami-validations', '~> 2.0'
 

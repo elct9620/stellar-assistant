@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/elct9620/hanami-lambda.git
+  revision: 8ff7cc0dabbe059feb6a5005d318cca1a033afd8
+  branch: main
+  specs:
+    hanami-lambda (0.1.0)
+      zeitwerk (~> 2.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -172,6 +180,7 @@ DEPENDENCIES
   guard-puma (~> 0.8)
   hanami (~> 2.0)
   hanami-controller (~> 2.0)
+  hanami-lambda!
   hanami-reloader
   hanami-router (~> 2.0)
   hanami-rspec
