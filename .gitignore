@@ -1,2 +1,5 @@
 .env
 log/*
+.aws-sam/
+.bundle/
+vendor/bundle
