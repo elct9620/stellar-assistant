@@ -2,6 +2,6 @@
 
 module Stellar
   class Routes < Hanami::Routes
-    root { 'Hello from Hanami' }
+    root to: 'probe.liveness'
   end
 end
