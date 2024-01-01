@@ -23,6 +23,7 @@ end
 
 group :development do
   gem 'guard-puma', '~> 0.8'
+  gem 'ruby-lsp'
 
   gem 'hanami-reloader'
 end
