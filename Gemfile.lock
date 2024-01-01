@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: 05d895d73c303b23f97d3b9da8704fa4b57f7a3e
+  revision: 8f8675c9bc159d1d7669a93c211d0e5a64abd6d9
   branch: main
   specs:
     hanami-lambda (0.1.0)
@@ -211,7 +211,6 @@ DEPENDENCIES
   dry-types (~> 1.0, >= 1.6.1)
   guard-puma (~> 0.8)
   hanami (~> 2.0)
-  hanami-cli
   hanami-controller (~> 2.0)
   hanami-lambda!
   hanami-reloader
