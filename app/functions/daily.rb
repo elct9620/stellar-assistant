@@ -5,7 +5,9 @@ module Stellar
     class Daily < Stellar::Function
       type Events::EventBridge
 
-      def handle(event, context); end
+      def handle(_event, _context)
+        { ok: true }
+      end
     end
   end
 end
