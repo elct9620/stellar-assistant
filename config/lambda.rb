@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'hanami/setup'
+require 'bundler/setup'
 require 'hanami/lambda'
 
 module Stellar
   class Lambda < Hanami::Lambda::Application
-    register 'StellarApiHandler'
+    delegate 'StellarDailyJob', to: 'daily'
   end
 end

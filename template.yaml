@@ -10,10 +10,10 @@ Globals:
     MemorySize: 512
 
 Resources:
-  StellarApiHandler:
+  StellarApi:
     Type: AWS::Serverless::Function
     Name: "stellar-api"
-    Properties:
+    Properties: &FunctionProperties
       CodeUri: .
       Handler: config/lambda.Hanami::Lambda.call
       Runtime: ruby3.2
@@ -26,13 +26,19 @@ Resources:
             Path: /
             Method: get
             RestApiId:
-              Ref: StellarApi
-  StellarApi:
+              Ref: StellarApiGateway
+  StellarApiGateway:
     Type: AWS::Serverless::Api
     Properties:
       StageName: Prod
-
-Outputs:
-  ApiEndpoint:
-    Description: Stellar API endpoint
-    Value: !Sub "https://${StellarApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+  StellarDailyJob:
+    Type: AWS::Serverless::Function
+    Name: "stellar-daily-job"
+    Properties:
+      <<: *FunctionProperties
+      Events:
+        Scheduler:
+          Type: ScheduleV2
+          Properties:
+            ScheduleExpression: cron(0 9 * * ? *)
+            ScheduleExpressionTimezone: Asia/Taipei
