@@ -14,10 +14,11 @@ gem 'dry-types', '~> 1.0', '>= 1.6.1'
 gem 'puma'
 gem 'rake'
 
-group :development, :test do
+group :cli, :development, :test do
   gem 'dotenv'
   gem 'rubocop'
 
+  gem 'hanami-cucumber'
   gem 'hanami-rspec'
 end
 
@@ -30,4 +31,7 @@ end
 
 group :test do
   gem 'rack-test'
+
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end

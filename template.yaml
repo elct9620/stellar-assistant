@@ -13,6 +13,8 @@ Resources:
   StellarApi:
     Type: AWS::Serverless::Function
     Name: "stellar-api"
+    Metadata:
+      BuildMethod: makefile
     Properties: &FunctionProperties
       CodeUri: .
       Handler: config/lambda.Hanami::Lambda.call
@@ -34,6 +36,8 @@ Resources:
   StellarDailyJob:
     Type: AWS::Serverless::Function
     Name: "stellar-daily-job"
+    Metadata:
+      BuildMethod: makefile
     Properties:
       <<: *FunctionProperties
       Events:
