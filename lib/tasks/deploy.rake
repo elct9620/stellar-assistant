@@ -2,7 +2,7 @@
 
 desc 'Run SAM build'
 task :build do
-  sh 'sam build --use-container'
+  sh 'sam build --use-container --cached'
 end
 
 desc 'Deploy to AWS'

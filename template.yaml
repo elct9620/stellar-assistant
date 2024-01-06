@@ -10,12 +10,28 @@ Globals:
     MemorySize: 512
 
 Resources:
+  GemLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: stellar-gems
+      Description: The Stellar Assistant dependency
+      ContentUri: .
+      CompatibleRuntimes:
+        - ruby3.2
+      RetentionPolicy: Delete
+    Metadata:
+      BuildMethod: makefile
   StellarApi:
     Type: AWS::Serverless::Function
     Name: "stellar-api"
     Metadata:
       BuildMethod: makefile
     Properties: &FunctionProperties
+      Layers:
+        - !Ref GemLayer
+      Environment:
+          Variables:
+            GEM_PATH: /opt/ruby/gems/3.2.0
       CodeUri: .
       Handler: config/lambda.Hanami::Lambda.call
       Runtime: ruby3.2
