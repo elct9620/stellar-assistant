@@ -36,6 +36,9 @@ Resources:
       Layers:
         - !Ref GemLayer
         - !Ref SecretManagerExtension
+      Environment:
+        Variables:
+          HANAMI_ENV: production
       Policies:
         - AWSSecretsManagerGetSecretValuePolicy:
             SecretArn: !Ref StellarSecret

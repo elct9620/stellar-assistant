@@ -10,7 +10,8 @@ gem 'hanami-lambda', github: 'elct9620/hanami-lambda', branch: 'main'
 gem 'hanami-router', '~> 2.0'
 gem 'hanami-validations', '~> 2.0'
 
-gem 'dry-types', '~> 1.0', '>= 1.6.1'
+gem 'dry-configurable', '~> 1.0'
+gem 'dry-types', '~> 1.0'
 
 group :cli, :development, :test do
   gem 'dotenv'

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: 50ff913bbcac196e7790a956ccab8ea54d983489
+  revision: 0359408bd2eeb2e96732bbfe6359fc011d914584
   branch: main
   specs:
     hanami-lambda (0.1.0)
@@ -282,7 +282,8 @@ PLATFORMS
 DEPENDENCIES
   capybara
   dotenv
-  dry-types (~> 1.0, >= 1.6.1)
+  dry-configurable (~> 1.0)
+  dry-types (~> 1.0)
   guard-puma (~> 0.8)
   hanami (~> 2.0)
   hanami-controller (~> 2.0)
