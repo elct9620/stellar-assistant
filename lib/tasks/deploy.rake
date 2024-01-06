@@ -2,7 +2,7 @@
 
 desc 'Run SAM build'
 task :build, %i[function_name] => :environment do |_, args|
-  sh "sam build --use-container --cached #{args.function_name}"
+  sh "sam build --parallel --use-container --cached #{args.function_name}"
 end
 
 desc 'Invoke Lambda locally'
