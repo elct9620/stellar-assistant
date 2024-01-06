@@ -9,7 +9,7 @@ Given('a event payload') do |payload|
 end
 
 When('the event {string} is triggered') do |function_name|
-  @output = app.call(event: @payload, context: LambdaContext.new(function_name:))
+  @output = app.handle_lambda(event: @payload, context: LambdaContext.new(function_name:))
 end
 
 Then('the handler should return') do |payload|
