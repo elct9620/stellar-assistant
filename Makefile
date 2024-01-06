@@ -9,6 +9,7 @@ copy-source: bundler-config
 	rm -rf $(ARTIFACTS_DIR)/.gitignore
 	rm -rf $(ARTIFACTS_DIR)/.env*
 	rm -rf $(ARTIFACTS_DIR)/spec
+	rm -rf $(ARTIFACTS_DIR)/features
 	rm -rf $(ARTIFACTS_DIR)/log/*
 	cd $(ARTIFACTS_DIR) && bundle config set path /opt
 

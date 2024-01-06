@@ -3,6 +3,12 @@ Transform: AWS::Serverless-2016-10-31
 Description: >
   Personal assistant for routine tasks
 
+Parameters:
+  SecretManagerExtension:
+    Type: String
+    Default: arn:aws:lambda:ap-northeast-1:133490724326:layer:AWS-Parameters-and-Secrets-Lambda-Extension:11
+    Description: The secret manager extension ARN
+
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -29,9 +35,10 @@ Resources:
     Properties: &FunctionProperties
       Layers:
         - !Ref GemLayer
-      Environment:
-          Variables:
-            GEM_PATH: /opt/ruby/gems/3.2.0
+        - !Ref SecretManagerExtension
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref StellarSecret
       CodeUri: .
       Handler: config/lambda.Hanami::Lambda.call
       Runtime: ruby3.2
@@ -62,3 +69,7 @@ Resources:
           Properties:
             ScheduleExpression: cron(0 9 * * ? *)
             ScheduleExpressionTimezone: Asia/Taipei
+  StellarSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: "stellar-secret"
