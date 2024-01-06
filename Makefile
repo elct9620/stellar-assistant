@@ -7,6 +7,9 @@ copy-source: bundler-config
 	rm -rf $(ARTIFACTS_DIR)/.git
 	rm -rf $(ARTIFACTS_DIR)/.github
 	rm -rf $(ARTIFACTS_DIR)/.gitignore
+	rm -rf $(ARTIFACTS_DIR)/.env*
+	rm -rf $(ARTIFACTS_DIR)/spec
+	rm -rf $(ARTIFACTS_DIR)/log/*
 	cd $(ARTIFACTS_DIR) && bundle config set path /opt
 
 build: bundler-config
