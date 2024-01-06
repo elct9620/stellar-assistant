@@ -43,7 +43,7 @@ Resources:
         - AWSSecretsManagerGetSecretValuePolicy:
             SecretArn: !Ref StellarSecret
       CodeUri: .
-      Handler: config/lambda.Hanami::Lambda.call
+      Handler: config/app.Hanami::Lambda.call
       Runtime: ruby3.2
       Architectures:
         - x86_64
