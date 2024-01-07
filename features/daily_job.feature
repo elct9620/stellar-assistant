@@ -23,7 +23,5 @@ Feature: Daily Job
       | 以色列軍方：已拆除加薩北部哈瑪斯指揮機構               | https://www.cna.com.tw/news/aopl/202401070008.aspx | 2024-01-06 21:16:14 UTC |
       | 阿拉斯加航空客機窗戶遭吹走 美監管機構下令停飛波音737-9 | https://www.cna.com.tw/news/aopl/202401070007.aspx | 2024-01-06 20:30:11 UTC |
     When the event "StellarDailyJob" is triggered
-    Then the handler should return
-      """
-      { "count": 3 }
-      """
+    Then the handler result should include "summaries"
+    And the handler result should include "steps"

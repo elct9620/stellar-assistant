@@ -16,3 +16,7 @@ Then('the handler should return') do |payload|
   expected = Hanami::Utils::Hash.deep_symbolize(JSON.parse(payload))
   expect(@output).to eq(expected)
 end
+
+Then('the handler result should include {string}') do |key|
+  expect(@output).to have_key(key)
+end

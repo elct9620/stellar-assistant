@@ -17,5 +17,10 @@ module Stellar
     setting :secret do
       setting :name, default: 'stellar-secret', constructor: Types::String
     end
+
+    setting :openai do
+      setting :model, default: 'gpt-3.5-turbo-16k', constructor: Types::String
+      setting :temperature, default: 0.0, constructor: Types::Float
+    end
   end
 end
