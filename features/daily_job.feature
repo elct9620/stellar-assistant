@@ -17,8 +17,13 @@ Feature: Daily Job
         "detail": "{}"
       }
       """
+    And there are some news feeds
+      | title                                                  | link                                               | published_at            |
+      | 美國會大廈襲擊案屆3週年 3名通緝犯被捕到案              | https://www.cna.com.tw/news/aopl/202401070010.aspx | 2024-01-07 00:34:23 UTC |
+      | 以色列軍方：已拆除加薩北部哈瑪斯指揮機構               | https://www.cna.com.tw/news/aopl/202401070008.aspx | 2024-01-06 21:16:14 UTC |
+      | 阿拉斯加航空客機窗戶遭吹走 美監管機構下令停飛波音737-9 | https://www.cna.com.tw/news/aopl/202401070007.aspx | 2024-01-06 20:30:11 UTC |
     When the event "StellarDailyJob" is triggered
     Then the handler should return
       """
-      { "ok": true }
+      { "count": 3 }
       """
