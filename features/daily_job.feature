@@ -1,5 +1,5 @@
-@lambda
 Feature: Daily Job
+  @openai
   Scenario: When scheduled job is trigger
     Given a event payload
       """

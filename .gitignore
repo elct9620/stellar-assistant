@@ -4,4 +4,5 @@ log/*
 .aws-sam/
 .bundle/
 config/secrets/
+!config/secrets/.keep
 vendor/bundle/
