@@ -64,4 +64,5 @@ jobs:
       - run: sam build --parallel --use-container --cached
       - run: |
           sam deploy --no-confirm-changeset --no-fail-on-empty-changeset \
-                     --parameter-overrides SpreadsheetId=${{ secrets.SPREADSHEET_ID }}
+                     --parameter-overrides SpreadsheetId=${{ secrets.SPREADSHEET_ID }} \
+                     --parameter-overrides TelegramChatId=${{ secrets.TELEGRAM_CHAT_ID }}

@@ -11,6 +11,9 @@ Parameters:
   SpreadsheetId:
     Type: String
     Description: The spreadsheet contains user defined data
+  TelegramChatId:
+    Type: String
+    Description: The chat should assistant send messages
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
