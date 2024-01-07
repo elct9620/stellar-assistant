@@ -7,7 +7,10 @@ end
 
 desc 'Invoke Lambda locally'
 task :invoke, %i[function_name event] => :environment do |_, args|
-  sh "sam local invoke #{args.function_name} -e spec/fixtures/events/#{args.event || 'default'}.json"
+  envfile = Hanami.app.root.join('env.json')
+  command = "sam local invoke #{args.function_name} -e spec/fixtures/events/#{args.event || 'default'}.json"
+  command += " --env-vars #{envfile}" if envfile.exist?
+  sh command
 end
 
 desc 'Deploy to AWS'

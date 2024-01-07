@@ -8,6 +8,8 @@ module Stellar
     #
     # setting :my_flag, default: false, constructor: Types::Params::Bool
 
+    setting :spreadsheet_id, default: '', constructor: Types::String
+
     setting :aws do
       setting :session_token, default: '', constructor: Types::String
     end

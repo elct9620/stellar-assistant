@@ -13,6 +13,9 @@ gem 'hanami-validations', '~> 2.0'
 gem 'dry-configurable', '~> 1.0'
 gem 'dry-types', '~> 1.0'
 
+gem 'google-apis-sheets_v4', '~> 0.2.0'
+gem 'googleauth'
+
 group :cli, :development, :test do
   gem 'dotenv'
   gem 'puma'
