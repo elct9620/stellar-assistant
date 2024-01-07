@@ -46,6 +46,7 @@ Resources:
         Variables:
           HANAMI_ENV: production
           SPREADSHEET_ID: !Ref SpreadsheetId
+          TELEGRAM_CHAT_ID: !Ref TelegramChatId
       Policies:
         - AWSSecretsManagerGetSecretValuePolicy:
             SecretArn: !Ref StellarSecret
