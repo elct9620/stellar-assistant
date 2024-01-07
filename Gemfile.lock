@@ -136,10 +136,13 @@ GEM
       dry-initializer (~> 3.0)
       dry-schema (>= 1.12, < 2)
       zeitwerk (~> 2.6)
+    event_stream_parser (1.0.0)
     faraday (2.8.1)
       base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
     faraday-net_http (3.0.2)
     feedjira (3.2.2)
       loofah (>= 2.3.1)
@@ -250,6 +253,7 @@ GEM
     mini_portile2 (2.8.5)
     multi_json (1.15.0)
     multi_test (1.1.0)
+    multipart-post (2.3.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     mustermann-contrib (3.0.0)
@@ -330,6 +334,10 @@ GEM
       language_server-protocol (~> 3.17.0)
       prism (>= 0.19.0, < 0.20)
       sorbet-runtime (>= 0.5.5685)
+    ruby-openai (6.3.1)
+      event_stream_parser (>= 0.3.0, < 2.0.0)
+      faraday (>= 1)
+      faraday-multipart (>= 1)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -386,6 +394,7 @@ DEPENDENCIES
   rake
   rubocop
   ruby-lsp
+  ruby-openai
   selenium-webdriver
 
 RUBY VERSION
