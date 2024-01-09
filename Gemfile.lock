@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: e7366d924fff1054455d2cb8dbc87e5a99a5d4cf
+  revision: fb1057b7e2a7418d35d602c55946d43f2b140045
   branch: main
   specs:
-    hanami-lambda (0.1.0)
+    hanami-lambda (0.2.0)
       dry-inflector (~> 1.0)
       dry-struct (~> 1.0)
       hanami (~> 2.0)
@@ -33,7 +33,6 @@ GEM
       async
     async-pool (0.4.0)
       async (>= 1.25)
-    base64 (0.2.0)
     bigdecimal (3.1.5)
     builder (3.2.4)
     capybara (3.39.2)
@@ -137,13 +136,12 @@ GEM
       dry-schema (>= 1.12, < 2)
       zeitwerk (~> 2.6)
     event_stream_parser (1.0.0)
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
-    faraday-net_http (3.0.2)
+    faraday-net_http (3.1.0)
+      net-http
     feedjira (3.2.2)
       loofah (>= 2.3.1)
       sax-machine (>= 1.0)
@@ -260,6 +258,8 @@ GEM
       hansi (~> 0.2.0)
       mustermann (= 3.0.0)
     nenv (0.3.0)
+    net-http (0.4.1)
+      uri
     nio4r (2.7.0)
     nokogiri (1.16.0)
       mini_portile2 (~> 2.8.2)
@@ -352,7 +352,7 @@ GEM
       faraday (>= 0.17.5, < 3.a)
       jwt (>= 1.5, < 3.0)
       multi_json (~> 1.10)
-    sorbet-runtime (0.5.11178)
+    sorbet-runtime (0.5.11180)
     sys-uname (1.2.3)
       ffi (~> 1.1)
     telegram-bot-ruby (1.0.0)
@@ -366,6 +366,7 @@ GEM
     trailblazer-option (0.1.2)
     uber (0.1.0)
     unicode-display_width (2.5.0)
+    uri (0.13.0)
     webrick (1.8.1)
     websocket (1.2.10)
     xpath (3.2.0)
