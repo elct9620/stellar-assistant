@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby file: '.ruby-version', patchlevel: nil
+ruby '~> 3.2.3'
 
 gem 'hanami', '~> 2.0'
 gem 'hanami-controller', '~> 2.0'
