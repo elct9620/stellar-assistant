@@ -20,7 +20,7 @@ module Stellar
     end
 
     setting :openai do
-      setting :model, default: 'gpt-3.5-turbo-16k', constructor: Types::String
+      setting :model, default: 'gpt-4o-mini', constructor: Types::String
       setting :temperature, default: 0.0, constructor: Types::Float
     end
   end
