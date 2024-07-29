@@ -13,7 +13,7 @@ gem 'hanami-validations', '~> 2.0'
 gem 'dry-configurable', '~> 1.0'
 gem 'dry-types', '~> 1.0'
 
-gem 'google-apis-sheets_v4', '~> 0.2.0'
+gem 'google-apis-sheets_v4', '~> 0.33.0'
 gem 'googleauth'
 
 gem 'ruby-openai'
