@@ -77,7 +77,7 @@ GEM
     cucumber-tag-expressions (5.0.6)
     declarative (0.0.20)
     diff-lcs (1.5.0)
-    dotenv (2.8.1)
+    dotenv (3.1.2)
     dry-auto_inject (1.0.1)
       dry-core (~> 1.0)
       zeitwerk (~> 2.6)
