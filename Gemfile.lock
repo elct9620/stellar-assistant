@@ -137,13 +137,13 @@ GEM
       dry-schema (>= 1.12, < 2)
       zeitwerk (~> 2.6)
     event_stream_parser (1.0.0)
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
+    faraday (2.10.1)
+      faraday-net_http (>= 2.0, < 3.2)
+      logger
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
-    faraday-net_http (3.0.2)
+    faraday-net_http (3.1.1)
+      net-http
     feedjira (3.2.3)
       loofah (>= 2.3.1, < 3)
       sax-machine (>= 1.0, < 2)
@@ -261,6 +261,8 @@ GEM
       hansi (~> 0.2.0)
       mustermann (= 3.0.0)
     nenv (0.3.0)
+    net-http (0.4.1)
+      uri
     nio4r (2.7.0)
     nokogiri (1.16.6)
       mini_portile2 (~> 2.8.2)
@@ -371,6 +373,7 @@ GEM
     trailblazer-option (0.1.2)
     uber (0.1.0)
     unicode-display_width (2.5.0)
+    uri (0.13.0)
     websocket (1.2.11)
     xpath (3.2.0)
       nokogiri (~> 1.8)
@@ -386,7 +389,7 @@ DEPENDENCIES
   dotenv
   dry-configurable (~> 1.0)
   dry-types (~> 1.0)
-  faraday (~> 2.8.1)
+  faraday (~> 2.10.1)
   feedjira
   google-apis-sheets_v4 (~> 0.33.0)
   googleauth
