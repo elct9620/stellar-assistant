@@ -10,7 +10,7 @@ gem 'hanami-lambda', github: 'elct9620/hanami-lambda', branch: 'main'
 gem 'hanami-router', '~> 2.1'
 gem 'hanami-validations', '~> 2.1'
 
-gem 'dry-configurable', '~> 1.0'
+gem 'dry-configurable', '~> 1.2'
 gem 'dry-types', '~> 1.0'
 
 gem 'google-apis-sheets_v4', '~> 0.34.0'
