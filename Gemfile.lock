@@ -1,13 +1,14 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: 0339d14d7f9fe71c8e43b3769612044213d76a9e
+  revision: 969f37e12b1095e480cfef5dbf20d95bf0224d9d
   branch: main
   specs:
-    hanami-lambda (0.2.0)
+    hanami-lambda (0.2.4)
       dry-inflector (~> 1.0)
       dry-struct (~> 1.0)
       hanami (~> 2.0)
       hanami-utils (~> 2.0)
+      rack (>= 2.0)
       zeitwerk (~> 2.6)
 
 GEM
