@@ -19,7 +19,7 @@ Parameters:
 Globals:
   Function:
     Timeout: 300
-    MemorySize: 512
+    MemorySize: 2048
 
 Resources:
   GemLayer:
@@ -47,6 +47,7 @@ Resources:
           HANAMI_ENV: production
           SPREADSHEET_ID: !Ref SpreadsheetId
           TELEGRAM_CHAT_ID: !Ref TelegramChatId
+          AWS_LAMBDA_EXEC_WRAPPER: /var/task/bin/wrapper
       Policies:
         - AWSSecretsManagerGetSecretValuePolicy:
             SecretArn: !Ref StellarSecret
