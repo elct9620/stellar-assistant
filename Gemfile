@@ -22,7 +22,7 @@ gem 'telegram-bot-ruby'
 gem 'async-http'
 gem 'feedjira'
 
-gem 'faraday', '2.11.0'
+gem 'faraday', '2.12.0'
 
 group :cli, :development, :test do
   gem 'dotenv'
