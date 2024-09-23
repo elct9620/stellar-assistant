@@ -139,8 +139,9 @@ GEM
       dry-schema (>= 1.12, < 2)
       zeitwerk (~> 2.6)
     event_stream_parser (1.0.0)
-    faraday (2.11.0)
+    faraday (2.12.0)
       faraday-net_http (>= 2.0, < 3.4)
+      json
       logger
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
@@ -396,7 +397,7 @@ DEPENDENCIES
   dotenv
   dry-configurable (~> 1.2)
   dry-types (~> 1.0)
-  faraday (= 2.11.0)
+  faraday (= 2.12.0)
   feedjira
   google-apis-sheets_v4 (~> 0.35.0)
   googleauth
