@@ -8,6 +8,8 @@ module Stellar
         'settings'
       ]
 
+      CF_AIG_HEADER = 'cf-aig-metadata'
+      PROMPT_VERSION = '2024-07-22'
       PROMPTS = [
         {
           role: 'system',
@@ -50,6 +52,7 @@ module Stellar
       private
 
       def completion(messages)
+        openai.add_headers(CF_AIG_HEADER => JSON.dump(prompt_version: PROMPT_VERSION))
         openai.chat(
           parameters: {
             model: settings.openai.model,
