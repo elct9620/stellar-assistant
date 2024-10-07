@@ -9,7 +9,7 @@ module Stellar
       ]
 
       CF_AIG_HEADER = 'cf-aig-metadata'
-      PROMPT_VERSION = '2024-07-22'
+      PROMPT_VERSION = '2024-10-07'
       PROMPTS = [
         {
           role: 'system',

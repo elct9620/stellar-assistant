@@ -54,6 +54,7 @@ module Stellar
         feed.entries.each do |entry|
           yield ({
             title: entry.title,
+            summary: entry.summary,
             url: entry.url,
             published_at: entry.published
           })
