@@ -21,7 +21,7 @@ GEM
       console (~> 1.26)
       fiber-annotation
       io-event (~> 1.6, >= 1.6.5)
-    async-http (0.82.1)
+    async-http (0.82.2)
       async (>= 2.10.2)
       async-pool (~> 0.9)
       io-endpoint (~> 0.14)
@@ -241,9 +241,9 @@ GEM
     httpclient (2.8.3)
     ice_nine (0.11.2)
     io-endpoint (0.14.0)
-    io-event (1.7.2)
+    io-event (1.7.3)
     io-stream (0.6.0)
-    json (2.7.2)
+    json (2.7.4)
     jwt (2.9.3)
       base64
     language_server-protocol (3.17.0.3)
@@ -288,7 +288,7 @@ GEM
       racc
     prism (1.2.0)
     protocol-hpack (1.5.1)
-    protocol-http (0.41.0)
+    protocol-http (0.42.0)
     protocol-http1 (0.28.1)
       protocol-http (~> 0.22)
     protocol-http2 (0.19.3)
