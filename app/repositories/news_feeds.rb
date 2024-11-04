@@ -62,10 +62,14 @@ module Stellar
       end
 
       def sources
-        @sources ||= spreadsheet.get_spreadsheet_values(
+        @sources ||= rows.map(&:first)
+      end
+
+      def rows
+        @rows ||= spreadsheet.get_spreadsheet_values(
           settings.spreadsheet_id,
           SHEET_NAME
-        )&.values&.drop(1)&.map(&:first)
+        )&.values&.drop(1) || []
       end
     end
   end
