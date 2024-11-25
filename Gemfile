@@ -8,7 +8,7 @@ gem 'hanami', '~> 2.2'
 gem 'hanami-controller', '~> 2.2'
 gem 'hanami-lambda', github: 'elct9620/hanami-lambda', branch: 'main'
 gem 'hanami-router', '~> 2.2'
-gem 'hanami-validations', '~> 2.1'
+gem 'hanami-validations', '~> 2.2'
 
 gem 'dry-configurable', '~> 1.2'
 gem 'dry-types', '~> 1.0'
