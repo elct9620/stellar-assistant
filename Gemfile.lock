@@ -375,7 +375,7 @@ GEM
     sorbet-runtime (0.5.11645)
     sys-uname (1.2.3)
       ffi (~> 1.1)
-    telegram-bot-ruby (2.0.0)
+    telegram-bot-ruby (2.1.0)
       dry-struct (~> 1.6)
       faraday (~> 2.0)
       faraday-multipart (~> 1.0)
