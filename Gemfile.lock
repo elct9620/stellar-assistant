@@ -165,7 +165,7 @@ GEM
       mutex_m
       representable (~> 3.0)
       retriable (>= 2.0, < 4.a)
-    google-apis-sheets_v4 (0.38.0)
+    google-apis-sheets_v4 (0.39.0)
       google-apis-core (>= 0.15.0, < 2.a)
     google-cloud-env (2.2.1)
       faraday (>= 1.0, < 3.a)
@@ -273,7 +273,7 @@ GEM
     mustermann-contrib (3.0.3)
       hansi (~> 0.2.0)
       mustermann (= 3.0.3)
-    mutex_m (0.2.0)
+    mutex_m (0.3.0)
     nenv (0.3.0)
     net-http (0.6.0)
       uri
@@ -406,7 +406,7 @@ DEPENDENCIES
   dry-types (~> 1.0)
   faraday (= 2.12.2)
   feedjira
-  google-apis-sheets_v4 (~> 0.38.0)
+  google-apis-sheets_v4 (~> 0.39.0)
   googleauth
   guard-puma (~> 0.8)
   hanami (~> 2.2)
