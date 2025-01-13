@@ -35,7 +35,7 @@ GEM
       async (>= 1.25)
       traces
     base64 (0.2.0)
-    bigdecimal (3.1.8)
+    bigdecimal (3.1.9)
     builder (3.2.4)
     capybara (3.40.0)
       addressable
@@ -95,12 +95,13 @@ GEM
       concurrent-ruby (~> 1.0)
       dry-core (~> 1.0, < 2)
     dry-files (1.1.0)
-    dry-inflector (1.1.0)
+    dry-inflector (1.2.0)
     dry-initializer (3.1.1)
     dry-logger (1.0.4)
-    dry-logic (1.5.0)
+    dry-logic (1.6.0)
+      bigdecimal
       concurrent-ruby (~> 1.0)
-      dry-core (~> 1.0, < 2)
+      dry-core (~> 1.1)
       zeitwerk (~> 2.6)
     dry-monitor (1.0.1)
       dry-configurable (~> 1.0, < 2)
@@ -126,7 +127,7 @@ GEM
       dry-inflector (~> 1.0)
     dry-transformer (1.0.1)
       zeitwerk (~> 2.6)
-    dry-types (1.7.2)
+    dry-types (1.8.0)
       bigdecimal (~> 3.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 1.0)
@@ -403,7 +404,7 @@ DEPENDENCIES
   capybara
   dotenv
   dry-configurable (~> 1.3)
-  dry-types (~> 1.0)
+  dry-types (~> 1.8)
   faraday (= 2.12.2)
   feedjira
   google-apis-sheets_v4 (~> 0.39.0)
