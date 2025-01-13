@@ -84,10 +84,10 @@ GEM
       dry-core (~> 1.0)
       zeitwerk (~> 2.6)
     dry-cli (1.2.0)
-    dry-configurable (1.2.0)
-      dry-core (~> 1.0, < 2)
+    dry-configurable (1.3.0)
+      dry-core (~> 1.1)
       zeitwerk (~> 2.6)
-    dry-core (1.0.2)
+    dry-core (1.1.0)
       concurrent-ruby (~> 1.0)
       logger
       zeitwerk (~> 2.6)
@@ -402,7 +402,7 @@ DEPENDENCIES
   async-http
   capybara
   dotenv
-  dry-configurable (~> 1.2)
+  dry-configurable (~> 1.3)
   dry-types (~> 1.0)
   faraday (= 2.12.2)
   feedjira
