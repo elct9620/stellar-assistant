@@ -75,6 +75,7 @@ Resources:
       BuildMethod: makefile
     Properties:
       <<: *FunctionProperties
+      Events: []
   StellarSecret:
     Type: AWS::SecretsManager::Secret
     Properties:
