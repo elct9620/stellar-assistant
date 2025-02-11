@@ -75,12 +75,6 @@ Resources:
       BuildMethod: makefile
     Properties:
       <<: *FunctionProperties
-      Events:
-        Scheduler:
-          Type: ScheduleV2
-          Properties:
-            ScheduleExpression: cron(0 9 * * ? *)
-            ScheduleExpressionTimezone: Asia/Taipei
   StellarSecret:
     Type: AWS::SecretsManager::Secret
     Properties:
