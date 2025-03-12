@@ -250,7 +250,7 @@ GEM
     io-endpoint (0.14.0)
     io-event (1.7.5)
     io-stream (0.6.1)
-    json (2.10.1)
+    json (2.10.2)
     jwt (2.10.1)
       base64
     language_server-protocol (3.17.0.4)
