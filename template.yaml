@@ -29,7 +29,7 @@ Resources:
       Description: The Stellar Assistant dependency
       ContentUri: .
       CompatibleRuntimes:
-        - ruby3.2
+        - ruby3.3
       RetentionPolicy: Delete
     Metadata:
       BuildMethod: makefile
@@ -53,7 +53,7 @@ Resources:
             SecretArn: !Ref StellarSecret
       CodeUri: .
       Handler: config/app.Hanami::Lambda.call
-      Runtime: ruby3.2
+      Runtime: ruby3.3
       Architectures:
         - x86_64
       Events:
