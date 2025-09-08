@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: 0f3c4a790a5fed7b7e18e945cc37616342516465
+  revision: d250e779cb4118e031cccff0a834f530d1212944
   branch: main
   specs:
     hanami-lambda (0.2.4)
@@ -36,7 +36,7 @@ GEM
     async-pool (0.11.0)
       async (>= 2.0)
     base64 (0.3.0)
-    bigdecimal (3.2.2)
+    bigdecimal (3.2.3)
     builder (3.2.4)
     capybara (3.40.0)
       addressable
