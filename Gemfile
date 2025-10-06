@@ -35,7 +35,7 @@ group :cli, :development, :test do
 end
 
 group :development do
-  gem 'guard-puma', '~> 0.8'
+  gem 'guard-puma', '~> 0.9'
   gem 'ruby-lsp'
 
   gem 'hanami-reloader'
