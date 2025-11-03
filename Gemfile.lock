@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: ef3e5266f66ecf05c156c8ecdade3817af88b4a0
+  revision: 778406c8d0dd9840848824108b6144c701f5795a
   branch: main
   specs:
     hanami-lambda (0.2.4)
@@ -320,7 +320,7 @@ GEM
     puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (2.2.20)
+    rack (2.2.21)
     rack-test (2.2.0)
       rack (>= 1.3)
     rainbow (3.1.1)
