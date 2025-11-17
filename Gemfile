@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '~> 3.3.6'
 
-gem 'hanami', '~> 2.2'
+gem 'hanami', '~> 2.3'
 gem 'hanami-controller', '~> 2.2'
 gem 'hanami-lambda', github: 'elct9620/hanami-lambda', branch: 'main'
 gem 'hanami-router', '~> 2.2'
