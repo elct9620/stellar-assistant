@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: f212d4dd75dcff6b3a492efc2a9c04b27a74c5d2
+  revision: 447ddbb4bd890f326bc198d741d0eadcefef0249
   branch: main
   specs:
     hanami-lambda (0.2.4)
@@ -221,7 +221,7 @@ GEM
       json (>= 2.7.2)
       rack-session
       zeitwerk (~> 2.6)
-    hanami-cli (2.3.4)
+    hanami-cli (2.3.5)
       bundler (>= 2.1)
       dry-cli (~> 1.0, >= 1.1.0)
       dry-files (~> 1.0, >= 1.0.2)
@@ -273,7 +273,7 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.18.0)
+    json (2.18.1)
     jwt (3.1.2)
       base64
     language_server-protocol (3.17.0.5)
