@@ -1,9 +1,14 @@
 # frozen_string_literal: true
 
 module Secrets
-  Error = Class.new(StandardError)
-  UnableLoadSecretsError = Class.new(Error)
-  UnsupportedProviderError = Class.new(Error)
+  class Error < StandardError
+  end
+
+  class UnableLoadSecretsError < Error
+  end
+
+  class UnsupportedProviderError < Error
+  end
 
   PROVIDER_BUILDERS = {
     'Secrets::File' => ->(config) { Secrets::File.new(config.file.root) },
