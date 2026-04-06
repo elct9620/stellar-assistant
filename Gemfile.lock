@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/elct9620/hanami-lambda.git
-  revision: 3c50526f38af80c684e7d62f4c1cad6675e26966
+  revision: 1ec143a5c517e41fb30ee08cb5a7764caee73c03
   branch: main
   specs:
     hanami-lambda (0.2.4)
