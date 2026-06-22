@@ -148,7 +148,7 @@ GEM
       zeitwerk (~> 2.6)
     erb (6.0.4)
     event_stream_parser (1.0.0)
-    faraday (2.14.2)
+    faraday (2.14.3)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -454,7 +454,7 @@ DEPENDENCIES
   dotenv
   dry-configurable (~> 1.4)
   dry-types (~> 1.9)
-  faraday (= 2.14.2)
+  faraday (= 2.14.3)
   feedjira
   google-apis-sheets_v4 (~> 0.48.0)
   googleauth
