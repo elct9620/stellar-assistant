@@ -50,7 +50,7 @@ GEM
       fiber-annotation
       fiber-local (~> 1.1)
       json
-    crass (1.0.7)
+    crass (1.0.8)
     csv (3.3.5)
     cucumber (9.1.2)
       builder (~> 3.2, >= 3.2.4)
