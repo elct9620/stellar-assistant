@@ -175,7 +175,7 @@ GEM
       multi_json (~> 1.21, >= 1.21.2)
       representable (~> 3.3, >= 3.3.1)
       retriable (>= 3.1, < 5.0)
-    google-apis-sheets_v4 (0.50.0)
+    google-apis-sheets_v4 (0.51.0)
       google-apis-core (>= 0.15.0, < 2.a)
     google-cloud-env (2.4.1)
       base64 (~> 0.2)
@@ -455,7 +455,7 @@ DEPENDENCIES
   dry-types (~> 1.9)
   faraday (= 2.15.1)
   feedjira
-  google-apis-sheets_v4 (~> 0.50.0)
+  google-apis-sheets_v4 (~> 0.51.0)
   googleauth
   guard-puma (~> 0.10)
   hanami (~> 2.3)
